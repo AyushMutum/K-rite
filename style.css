@@ -440,6 +440,46 @@ tbody td.active {
     overflow-x: scroll !important;
     -webkit-overflow-scrolling: touch;
   }
+ 
+ 
+  .table {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  table thead {
+    display: none;
+    
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+  }
+
+  table td {
+    display: block;
+    text-align: left;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    float: left;
+    text-transform: uppercase;
+  }
+
+  table td:last-child::before {
+    content: none;
+  }
+
 
 
 }
